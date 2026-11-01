@@ -1,0 +1,15 @@
+HTTP/2 200
+access-control-allow-origin: *
+age: 259553
+cache-control: public,max-age=31536000,immutable
+content-disposition: inline; filename="page-e1cc18fdcf688572.js"
+content-encoding: br
+content-type: application/javascript; charset=utf-8
+date: Sun, 01 Nov 2026 18:51:41 GMT
+etag: W/"4c6ea2ac8f47857bcbeff695b8a6e15c"
+last-modified: Thu, 29 Oct 2026 18:45:47 GMT
+server: Vercel
+strict-transport-security: max-age=63072000
+x-matched-path: /_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js
+x-vercel-cache: HIT
+x-vercel-id: bom1::nsnkm-1793559101209-c792fe0e0167

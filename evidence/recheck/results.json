@@ -1,0 +1,120 @@
+{
+  "pages": [
+    {
+      "round": 1,
+      "url": "https://www.cynbit.in/",
+      "checked_at": "2026-11-01T18:51:33.403666+00:00",
+      "status": 200,
+      "ttfb_seconds": 0.291625,
+      "cache": "HIT",
+      "content_encoding": "br",
+      "csp": null,
+      "csp_meta": [],
+      "x_frame_options": null,
+      "x_content_type_options": null,
+      "hsts": "max-age=63072000",
+      "decoded_body_sha256": "233a81dfa6e971ffff9396d4d52390026ab4f10d45c8c586d0a48d23cac4fe41"
+    },
+    {
+      "round": 1,
+      "url": "https://www.cynbit.in/contact",
+      "checked_at": "2026-11-01T18:51:35.026622+00:00",
+      "status": 200,
+      "ttfb_seconds": 0.608035,
+      "cache": "HIT",
+      "content_encoding": "br",
+      "csp": null,
+      "csp_meta": [],
+      "x_frame_options": null,
+      "x_content_type_options": null,
+      "hsts": "max-age=63072000",
+      "decoded_body_sha256": "15c0a672e1be31891b13d508148e3e73d1d7c8aacc40ca38c370530b063122f3"
+    },
+    {
+      "round": 1,
+      "url": "https://www.cynbit.in/bitelevate",
+      "checked_at": "2026-11-01T18:51:36.321133+00:00",
+      "status": 200,
+      "ttfb_seconds": 0.27032,
+      "cache": "HIT",
+      "content_encoding": "br",
+      "csp": null,
+      "csp_meta": [],
+      "x_frame_options": null,
+      "x_content_type_options": null,
+      "hsts": "max-age=63072000",
+      "decoded_body_sha256": "2a73dc2fced7ce9bb28c91c21cba7914c5c976e0545603a1434c58c4063bf1e4"
+    },
+    {
+      "round": 2,
+      "url": "https://www.cynbit.in/",
+      "checked_at": "2026-11-01T18:51:37.564038+00:00",
+      "status": 200,
+      "ttfb_seconds": 0.223179,
+      "cache": "HIT",
+      "content_encoding": "br",
+      "csp": null,
+      "csp_meta": [],
+      "x_frame_options": null,
+      "x_content_type_options": null,
+      "hsts": "max-age=63072000",
+      "decoded_body_sha256": "233a81dfa6e971ffff9396d4d52390026ab4f10d45c8c586d0a48d23cac4fe41"
+    },
+    {
+      "round": 2,
+      "url": "https://www.cynbit.in/contact",
+      "checked_at": "2026-11-01T18:51:38.837301+00:00",
+      "status": 200,
+      "ttfb_seconds": 0.258641,
+      "cache": "HIT",
+      "content_encoding": "br",
+      "csp": null,
+      "csp_meta": [],
+      "x_frame_options": null,
+      "x_content_type_options": null,
+      "hsts": "max-age=63072000",
+      "decoded_body_sha256": "15c0a672e1be31891b13d508148e3e73d1d7c8aacc40ca38c370530b063122f3"
+    },
+    {
+      "round": 2,
+      "url": "https://www.cynbit.in/bitelevate",
+      "checked_at": "2026-11-01T18:51:40.165297+00:00",
+      "status": 200,
+      "ttfb_seconds": 0.299367,
+      "cache": "HIT",
+      "content_encoding": "br",
+      "csp": null,
+      "csp_meta": [],
+      "x_frame_options": null,
+      "x_content_type_options": null,
+      "hsts": "max-age=63072000",
+      "decoded_body_sha256": "2a73dc2fced7ce9bb28c91c21cba7914c5c976e0545603a1434c58c4063bf1e4"
+    }
+  ],
+  "sources": [
+    {
+      "action": "submitInquiry",
+      "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/contact/page-a581c8d7462124d9.js",
+      "status": 200,
+      "sha256": "98e8032a1357297428d7bbcd0964394955339d5ee8a67b2895a637f671b9de83",
+      "matches_previous_source": true,
+      "action_declaration_present": true
+    },
+    {
+      "action": "createBitelevateCashfreeOrder",
+      "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js",
+      "status": 200,
+      "sha256": "d7d8eba36b7dc9b3dace1784e1864c78e61cad45561628e1bb58401ca1a53165",
+      "matches_previous_source": true,
+      "action_declaration_present": true
+    },
+    {
+      "action": "submitCandidateApplication",
+      "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/careers/%5Bslug%5D/page-082725dddd6cb4ac.js",
+      "status": 200,
+      "sha256": "aa7de21390cb66d07a2a4733dff2c1833b64cd28225b75d8c22f11818a195a26",
+      "matches_previous_source": true,
+      "action_declaration_present": true
+    }
+  ]
+}

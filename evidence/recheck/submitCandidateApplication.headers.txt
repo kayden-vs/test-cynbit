@@ -1,0 +1,15 @@
+HTTP/2 200
+access-control-allow-origin: *
+age: 142497
+cache-control: public,max-age=31536000,immutable
+content-disposition: inline; filename="page-082725dddd6cb4ac.js"
+content-encoding: br
+content-type: application/javascript; charset=utf-8
+date: Sun, 01 Nov 2026 18:51:43 GMT
+etag: W/"aebdd5b9614ccf48854738d979e1ccfe"
+last-modified: Sat, 31 Oct 2026 03:16:45 GMT
+server: Vercel
+strict-transport-security: max-age=63072000
+x-matched-path: /_next/static/chunks/app/(marketing)/careers/%5Bslug%5D/page-082725dddd6cb4ac.js
+x-vercel-cache: HIT
+x-vercel-id: bom1::wq9s5-1793559103146-2212dc4a0b42

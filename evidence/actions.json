@@ -1,0 +1,185 @@
+[
+  {
+    "action": "submitCandidateApplication",
+    "action_id": "40645a00e04f6854903cf3a65fda4c75ddd7691de9",
+    "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/careers/%5Bslug%5D/page-082725dddd6cb4ac.js",
+    "sha256": "aa7de21390cb66d07a2a4733dff2c1833b64cd28225b75d8c22f11818a195a26",
+    "character_offset": 1651,
+    "utf8_byte_offset": 1651,
+    "context": "5155),s=r(12115),l=r(52619),n=r.n(l),i=r(75526),c=r(30926);let o=(0,c.createServerReference)(\"40645a00e04f6854903cf3a65fda4c75ddd7691de9\",c.callServer,void 0,c.findSourceMapURL,\"submitCandidateApplication\"),d=[\"10th / High School\",\"12th / Senior Secondary\",\"Diploma\",\"Bachelor\u2019s Degree\",\"Master\u2019s Degree\",\"",
+    "form_fields_in_bundle": [
+      "fullName",
+      "email",
+      "phone",
+      "whatsapp",
+      "dob",
+      "gender",
+      "noticePeriod",
+      "skills",
+      "currentCity",
+      "permanentAddress",
+      "portfolioUrl",
+      "linkedinUrl",
+      "professionalProfileUrl",
+      "message",
+      "agreedToTerms"
+    ],
+    "callsite_contexts": [
+      {
+        "character_offset": 2688,
+        "utf8_byte_offset": 2694,
+        "context": "a.id===e?{...a,[t]:r}:a))},N=async e=>{e.preventDefault(),b(null),h(null);let r=new FormData(e.currentTarget);r.append(\"jobId\",t),r.append(\"educationData\",JSON.stringify(y));let a=y[0]||{},s=\"Other\"===a.degree?a.customDegree||\"Other\":a.degree||\"Degree\",n=\"\".concat(a.qualificationLevel||\"Degree\",\" in \").concat(s).concat(a.specialization?\" (\".concat(a.specialization,\")\"):\"\");r.set(\"education\",n),r.set(\"university\",a.university||\"Not Specified\"),r.set(\"graduationYear\",a.graduationYear||\"2025\"),l(async()=>{var e,t,a;let s=await o(r);s.success?(m(!0),null==(e=document.getElementById(\"application-form\"))||e.scrollIntoView({behavior:\"smooth\"})):s.isDuplicate&&s.trackingUrl?(h(s.trackingUrl),null==(t=document.getElementById(\"application-form\"))||t.scrollIntoView({behavior:\"smooth\"})):(b(s.error||\"Something went wrong. Please c"
+      },
+      {
+        "character_offset": 2719,
+        "utf8_byte_offset": 2725,
+        "context": "ync e=>{e.preventDefault(),b(null),h(null);let r=new FormData(e.currentTarget);r.append(\"jobId\",t),r.append(\"educationData\",JSON.stringify(y));let a=y[0]||{},s=\"Other\"===a.degree?a.customDegree||\"Other\":a.degree||\"Degree\",n=\"\".concat(a.qualificationLevel||\"Degree\",\" in \").concat(s).concat(a.specialization?\" (\".concat(a.specialization,\")\"):\"\");r.set(\"education\",n),r.set(\"university\",a.university||\"Not Specified\"),r.set(\"graduationYear\",a.graduationYear||\"2025\"),l(async()=>{var e,t,a;let s=await o(r);s.success?(m(!0),null==(e=document.getElementById(\"application-form\"))||e.scrollIntoView({behavior:\"smooth\"})):s.isDuplicate&&s.trackingUrl?(h(s.trackingUrl),null==(t=document.getElementById(\"application-form\"))||t.scrollIntoView({behavior:\"smooth\"})):(b(s.error||\"Something went wrong. Please check all required fields and tr"
+      },
+      {
+        "character_offset": 2739,
+        "utf8_byte_offset": 2745,
+        "context": "ault(),b(null),h(null);let r=new FormData(e.currentTarget);r.append(\"jobId\",t),r.append(\"educationData\",JSON.stringify(y));let a=y[0]||{},s=\"Other\"===a.degree?a.customDegree||\"Other\":a.degree||\"Degree\",n=\"\".concat(a.qualificationLevel||\"Degree\",\" in \").concat(s).concat(a.specialization?\" (\".concat(a.specialization,\")\"):\"\");r.set(\"education\",n),r.set(\"university\",a.university||\"Not Specified\"),r.set(\"graduationYear\",a.graduationYear||\"2025\"),l(async()=>{var e,t,a;let s=await o(r);s.success?(m(!0),null==(e=document.getElementById(\"application-form\"))||e.scrollIntoView({behavior:\"smooth\"})):s.isDuplicate&&s.trackingUrl?(h(s.trackingUrl),null==(t=document.getElementById(\"application-form\"))||t.scrollIntoView({behavior:\"smooth\"})):(b(s.error||\"Something went wrong. Please check all required fields and try again.\"),null==(a="
+      },
+      {
+        "character_offset": 2985,
+        "utf8_byte_offset": 2991,
+        "context": " in \").concat(s).concat(a.specialization?\" (\".concat(a.specialization,\")\"):\"\");r.set(\"education\",n),r.set(\"university\",a.university||\"Not Specified\"),r.set(\"graduationYear\",a.graduationYear||\"2025\"),l(async()=>{var e,t,a;let s=await o(r);s.success?(m(!0),null==(e=document.getElementById(\"application-form\"))||e.scrollIntoView({behavior:\"smooth\"})):s.isDuplicate&&s.trackingUrl?(h(s.trackingUrl),null==(t=document.getElementById(\"application-form\"))||t.scrollIntoView({behavior:\"smooth\"})):(b(s.error||\"Something went wrong. Please check all required fields and try again.\"),null==(a=document.getElementById(\"application-form\"))||a.scrollIntoView({behavior:\"smooth\"}))})};return c?(0,a.jsx)(i.default,{children:(0,a.jsxs)(\"div\",{className:\"bg-white p-12 md:p-20 rounded-[4rem] text-center space-y-8 shadow-sunlight border border-["
+      },
+      {
+        "character_offset": 3006,
+        "utf8_byte_offset": 3012,
+        "context": "at(a.specialization?\" (\".concat(a.specialization,\")\"):\"\");r.set(\"education\",n),r.set(\"university\",a.university||\"Not Specified\"),r.set(\"graduationYear\",a.graduationYear||\"2025\"),l(async()=>{var e,t,a;let s=await o(r);s.success?(m(!0),null==(e=document.getElementById(\"application-form\"))||e.scrollIntoView({behavior:\"smooth\"})):s.isDuplicate&&s.trackingUrl?(h(s.trackingUrl),null==(t=document.getElementById(\"application-form\"))||t.scrollIntoView({behavior:\"smooth\"})):(b(s.error||\"Something went wrong. Please check all required fields and try again.\"),null==(a=document.getElementById(\"application-form\"))||a.scrollIntoView({behavior:\"smooth\"}))})};return c?(0,a.jsx)(i.default,{children:(0,a.jsxs)(\"div\",{className:\"bg-white p-12 md:p-20 rounded-[4rem] text-center space-y-8 shadow-sunlight border border-[#006067]/20\",children"
+      },
+      {
+        "character_offset": 3056,
+        "utf8_byte_offset": 3062,
+        "context": ")\"):\"\");r.set(\"education\",n),r.set(\"university\",a.university||\"Not Specified\"),r.set(\"graduationYear\",a.graduationYear||\"2025\"),l(async()=>{var e,t,a;let s=await o(r);s.success?(m(!0),null==(e=document.getElementById(\"application-form\"))||e.scrollIntoView({behavior:\"smooth\"})):s.isDuplicate&&s.trackingUrl?(h(s.trackingUrl),null==(t=document.getElementById(\"application-form\"))||t.scrollIntoView({behavior:\"smooth\"})):(b(s.error||\"Something went wrong. Please check all required fields and try again.\"),null==(a=document.getElementById(\"application-form\"))||a.scrollIntoView({behavior:\"smooth\"}))})};return c?(0,a.jsx)(i.default,{children:(0,a.jsxs)(\"div\",{className:\"bg-white p-12 md:p-20 rounded-[4rem] text-center space-y-8 shadow-sunlight border border-[#006067]/20\",children:[(0,a.jsx)(\"div\",{className:\"w-20 h-20 bg-[#00606"
+      }
+    ]
+  },
+  {
+    "action": "verifyBitelevatePayment",
+    "action_id": "60895028315fbe0e72db7e2a1871d236f08f860ce1",
+    "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js",
+    "sha256": "d7d8eba36b7dc9b3dace1784e1864c78e61cad45561628e1bb58401ca1a53165",
+    "character_offset": 651,
+    "utf8_byte_offset": 651,
+    "context": "2115),n=a(52619),i=a.n(n),l=a(15239),o=a(75526),d=a(30926);let c=(0,d.createServerReference)(\"60895028315fbe0e72db7e2a1871d236f08f860ce1\",d.callServer,void 0,d.findSourceMapURL,\"verifyBitelevatePayment\"),m=(0,d.createServerReference)(\"40450605530d78e25921058a0059197fdb18b5f074\",d.callServer,void 0,d.fi",
+    "form_fields_in_bundle": [
+      "fullName",
+      "university",
+      "email",
+      "phone",
+      "track",
+      "duration",
+      "referralName",
+      "ambitions"
+    ],
+    "callsite_contexts": [
+      {
+        "character_offset": 9379,
+        "utf8_byte_offset": 9381,
+        "context": "/20\"}};(0,r.useEffect)(()=>{let e=new URLSearchParams(window.location.search),t=e.get(\"order_id\"),a=e.get(\"token\");t&&a&&(d(!0),h(\"Verifying payment transaction with Cashfree...\"),c(a,t).then(e=>{e.success?(b(!0),e.bitElevateCredentials&&y(e.bitElevateCredentials)):\"ACTIVE\"===e.orderStatus?j(\"Payment was not completed. If you closed the payment window or cancelled, your account has not been charged.\"):j(e.error||\"Payment verification incomplete. Your account was not charged.\")}).catch(e=>{console.error(\"Payment return verification error:\",e),j(\"Failed to verify payment status.\")}).finally(()=>{d(!1),h(\"\")}))},[]);let R=async e=>{e.preventDefault(),d(!0),h(\"Initializing secure payment session...\"),j(null);let t=new FormData(e.currentTarget);try{let e=await m(t);if(!e.success||!e.orderId||!e.token){j(e.error||\"Failed to "
+      },
+      {
+        "character_offset": 10019,
+        "utf8_byte_offset": 10021,
+        "context": "reventDefault(),d(!0),h(\"Initializing secure payment session...\"),j(null);let t=new FormData(e.currentTarget);try{let e=await m(t);if(!e.success||!e.orderId||!e.token){j(e.error||\"Failed to initialize payment gateway order.\"),d(!1),h(\"\");return}if(e.paymentSessionId){h(\"Opening Cashfree checkout modal...\");try{await new Promise((e,t)=>{if(window.Cashfree)return e();let a=document.createElement(\"script\");a.src=\"https://sdk.cashfree.com/js/v3/cashfree.js\",a.onload=()=>e(),a.onerror=()=>t(Error(\"Failed to load Cashfree SDK\")),document.body.appendChild(a)});let t=window.Cashfree({mode:\"production\"===e.environment?\"production\":\"sandbox\"});await t.checkout({paymentSessionId:e.paymentSessionId,redirectTarget:\"_modal\"}),h(\"Verifying payment settlement...\");let a=await c(e.token,e.orderId);a.success?(b(!0),a.bitElevateCredentia"
+      },
+      {
+        "character_offset": 10059,
+        "utf8_byte_offset": 10061,
+        "context": "cure payment session...\"),j(null);let t=new FormData(e.currentTarget);try{let e=await m(t);if(!e.success||!e.orderId||!e.token){j(e.error||\"Failed to initialize payment gateway order.\"),d(!1),h(\"\");return}if(e.paymentSessionId){h(\"Opening Cashfree checkout modal...\");try{await new Promise((e,t)=>{if(window.Cashfree)return e();let a=document.createElement(\"script\");a.src=\"https://sdk.cashfree.com/js/v3/cashfree.js\",a.onload=()=>e(),a.onerror=()=>t(Error(\"Failed to load Cashfree SDK\")),document.body.appendChild(a)});let t=window.Cashfree({mode:\"production\"===e.environment?\"production\":\"sandbox\"});await t.checkout({paymentSessionId:e.paymentSessionId,redirectTarget:\"_modal\"}),h(\"Verifying payment settlement...\");let a=await c(e.token,e.orderId);a.success?(b(!0),a.bitElevateCredentials&&y(a.bitElevateCredentials)):\"ACTIVE\""
+      },
+      {
+        "character_offset": 10704,
+        "utf8_byte_offset": 10706,
+        "context": "tSessionId,redirectTarget:\"_modal\"}),h(\"Verifying payment settlement...\");let a=await c(e.token,e.orderId);a.success?(b(!0),a.bitElevateCredentials&&y(a.bitElevateCredentials)):\"ACTIVE\"===a.orderStatus?j(\"Payment was not completed. If you closed the payment window or cancelled authorization, your account has not been charged. Click below to try again.\"):j(a.error||\"Payment was not completed. Your account has not been charged.\")}catch(a){console.warn(\"Cashfree checkout interaction:\",a),h(\"Verifying payment settlement...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(\"Payment was cancelled or closed before completion. Your account has not been charged.\")}}else{h(\"Verifying enrollment...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&"
+      },
+      {
+        "character_offset": 11157,
+        "utf8_byte_offset": 11159,
+        "context": "(\"Cashfree checkout interaction:\",a),h(\"Verifying payment settlement...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(\"Payment was cancelled or closed before completion. Your account has not been charged.\")}}else{h(\"Verifying enrollment...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(t.error||\"Payment verification failed.\")}}catch(e){console.error(\"Payment submission error:\",e),j((null==e?void 0:e.message)||\"Something went wrong while connecting to payment gateway.\")}finally{d(!1),h(\"\")}},T=()=>{let e=document.getElementById(\"apply-now\");null==e||e.scrollIntoView({behavior:\"smooth\"})};return(0,s.jsxs)(\"main\",{className:\"bg-surface overflow-hidden text-left\",children:[(0,s.jsx)(\"script\",{type:\"appli"
+      },
+      {
+        "character_offset": 11386,
+        "utf8_byte_offset": 11388,
+        "context": ". Your account has not been charged.\")}}else{h(\"Verifying enrollment...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(t.error||\"Payment verification failed.\")}}catch(e){console.error(\"Payment submission error:\",e),j((null==e?void 0:e.message)||\"Something went wrong while connecting to payment gateway.\")}finally{d(!1),h(\"\")}},T=()=>{let e=document.getElementById(\"apply-now\");null==e||e.scrollIntoView({behavior:\"smooth\"})};return(0,s.jsxs)(\"main\",{className:\"bg-surface overflow-hidden text-left\",children:[(0,s.jsx)(\"script\",{type:\"application/ld+json\",dangerouslySetInnerHTML:{__html:JSON.stringify(e)}}),(0,s.jsxs)(\"section\",{className:\"relative min-h-screen lg:h-screen flex items-center justify-center pt-20 lg:pt-24 pb-4 lg:pb-6 px-4 md:px-8 lg:px-12 bg-surface"
+      }
+    ]
+  },
+  {
+    "action": "createBitelevateCashfreeOrder",
+    "action_id": "40450605530d78e25921058a0059197fdb18b5f074",
+    "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/bitelevate/page-e1cc18fdcf688572.js",
+    "sha256": "d7d8eba36b7dc9b3dace1784e1864c78e61cad45561628e1bb58401ca1a53165",
+    "character_offset": 792,
+    "utf8_byte_offset": 792,
+    "context": "allServer,void 0,d.findSourceMapURL,\"verifyBitelevatePayment\"),m=(0,d.createServerReference)(\"40450605530d78e25921058a0059197fdb18b5f074\",d.callServer,void 0,d.findSourceMapURL,\"createBitelevateCashfreeOrder\");var x=a(75563),p=a(26497);function u(){let e={\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"B",
+    "form_fields_in_bundle": [
+      "fullName",
+      "university",
+      "email",
+      "phone",
+      "track",
+      "duration",
+      "referralName",
+      "ambitions"
+    ],
+    "callsite_contexts": [
+      {
+        "character_offset": 9379,
+        "utf8_byte_offset": 9381,
+        "context": "/20\"}};(0,r.useEffect)(()=>{let e=new URLSearchParams(window.location.search),t=e.get(\"order_id\"),a=e.get(\"token\");t&&a&&(d(!0),h(\"Verifying payment transaction with Cashfree...\"),c(a,t).then(e=>{e.success?(b(!0),e.bitElevateCredentials&&y(e.bitElevateCredentials)):\"ACTIVE\"===e.orderStatus?j(\"Payment was not completed. If you closed the payment window or cancelled, your account has not been charged.\"):j(e.error||\"Payment verification incomplete. Your account was not charged.\")}).catch(e=>{console.error(\"Payment return verification error:\",e),j(\"Failed to verify payment status.\")}).finally(()=>{d(!1),h(\"\")}))},[]);let R=async e=>{e.preventDefault(),d(!0),h(\"Initializing secure payment session...\"),j(null);let t=new FormData(e.currentTarget);try{let e=await m(t);if(!e.success||!e.orderId||!e.token){j(e.error||\"Failed to "
+      },
+      {
+        "character_offset": 10019,
+        "utf8_byte_offset": 10021,
+        "context": "reventDefault(),d(!0),h(\"Initializing secure payment session...\"),j(null);let t=new FormData(e.currentTarget);try{let e=await m(t);if(!e.success||!e.orderId||!e.token){j(e.error||\"Failed to initialize payment gateway order.\"),d(!1),h(\"\");return}if(e.paymentSessionId){h(\"Opening Cashfree checkout modal...\");try{await new Promise((e,t)=>{if(window.Cashfree)return e();let a=document.createElement(\"script\");a.src=\"https://sdk.cashfree.com/js/v3/cashfree.js\",a.onload=()=>e(),a.onerror=()=>t(Error(\"Failed to load Cashfree SDK\")),document.body.appendChild(a)});let t=window.Cashfree({mode:\"production\"===e.environment?\"production\":\"sandbox\"});await t.checkout({paymentSessionId:e.paymentSessionId,redirectTarget:\"_modal\"}),h(\"Verifying payment settlement...\");let a=await c(e.token,e.orderId);a.success?(b(!0),a.bitElevateCredentia"
+      },
+      {
+        "character_offset": 10059,
+        "utf8_byte_offset": 10061,
+        "context": "cure payment session...\"),j(null);let t=new FormData(e.currentTarget);try{let e=await m(t);if(!e.success||!e.orderId||!e.token){j(e.error||\"Failed to initialize payment gateway order.\"),d(!1),h(\"\");return}if(e.paymentSessionId){h(\"Opening Cashfree checkout modal...\");try{await new Promise((e,t)=>{if(window.Cashfree)return e();let a=document.createElement(\"script\");a.src=\"https://sdk.cashfree.com/js/v3/cashfree.js\",a.onload=()=>e(),a.onerror=()=>t(Error(\"Failed to load Cashfree SDK\")),document.body.appendChild(a)});let t=window.Cashfree({mode:\"production\"===e.environment?\"production\":\"sandbox\"});await t.checkout({paymentSessionId:e.paymentSessionId,redirectTarget:\"_modal\"}),h(\"Verifying payment settlement...\");let a=await c(e.token,e.orderId);a.success?(b(!0),a.bitElevateCredentials&&y(a.bitElevateCredentials)):\"ACTIVE\""
+      },
+      {
+        "character_offset": 10704,
+        "utf8_byte_offset": 10706,
+        "context": "tSessionId,redirectTarget:\"_modal\"}),h(\"Verifying payment settlement...\");let a=await c(e.token,e.orderId);a.success?(b(!0),a.bitElevateCredentials&&y(a.bitElevateCredentials)):\"ACTIVE\"===a.orderStatus?j(\"Payment was not completed. If you closed the payment window or cancelled authorization, your account has not been charged. Click below to try again.\"):j(a.error||\"Payment was not completed. Your account has not been charged.\")}catch(a){console.warn(\"Cashfree checkout interaction:\",a),h(\"Verifying payment settlement...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(\"Payment was cancelled or closed before completion. Your account has not been charged.\")}}else{h(\"Verifying enrollment...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&"
+      },
+      {
+        "character_offset": 11157,
+        "utf8_byte_offset": 11159,
+        "context": "(\"Cashfree checkout interaction:\",a),h(\"Verifying payment settlement...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(\"Payment was cancelled or closed before completion. Your account has not been charged.\")}}else{h(\"Verifying enrollment...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(t.error||\"Payment verification failed.\")}}catch(e){console.error(\"Payment submission error:\",e),j((null==e?void 0:e.message)||\"Something went wrong while connecting to payment gateway.\")}finally{d(!1),h(\"\")}},T=()=>{let e=document.getElementById(\"apply-now\");null==e||e.scrollIntoView({behavior:\"smooth\"})};return(0,s.jsxs)(\"main\",{className:\"bg-surface overflow-hidden text-left\",children:[(0,s.jsx)(\"script\",{type:\"appli"
+      },
+      {
+        "character_offset": 11386,
+        "utf8_byte_offset": 11388,
+        "context": ". Your account has not been charged.\")}}else{h(\"Verifying enrollment...\");let t=await c(e.token,e.orderId);t.success?(b(!0),t.bitElevateCredentials&&y(t.bitElevateCredentials)):j(t.error||\"Payment verification failed.\")}}catch(e){console.error(\"Payment submission error:\",e),j((null==e?void 0:e.message)||\"Something went wrong while connecting to payment gateway.\")}finally{d(!1),h(\"\")}},T=()=>{let e=document.getElementById(\"apply-now\");null==e||e.scrollIntoView({behavior:\"smooth\"})};return(0,s.jsxs)(\"main\",{className:\"bg-surface overflow-hidden text-left\",children:[(0,s.jsx)(\"script\",{type:\"application/ld+json\",dangerouslySetInnerHTML:{__html:JSON.stringify(e)}}),(0,s.jsxs)(\"section\",{className:\"relative min-h-screen lg:h-screen flex items-center justify-center pt-20 lg:pt-24 pb-4 lg:pb-6 px-4 md:px-8 lg:px-12 bg-surface"
+      }
+    ]
+  },
+  {
+    "action": "submitInquiry",
+    "action_id": "40247ba4465344b3386595bab4303317cdcce907df",
+    "url": "https://www.cynbit.in/_next/static/chunks/app/(marketing)/contact/page-a581c8d7462124d9.js",
+    "sha256": "98e8032a1357297428d7bbcd0964394955339d5ee8a67b2895a637f671b9de83",
+    "character_offset": 641,
+    "utf8_byte_offset": 641,
+    "context": "5526),l=a(52619),n=a.n(l),o=a(26497),c=a(75563),d=a(30926);let x=(0,d.createServerReference)(\"40247ba4465344b3386595bab4303317cdcce907df\",d.callServer,void 0,d.findSourceMapURL,\"submitInquiry\");function u(){let[e,t]=(0,s.useState)(!1),[a,i]=(0,s.useState)(!1),[l,n]=(0,s.useState)(null),d=asyn",
+    "form_fields_in_bundle": [
+      "fullName",
+      "email",
+      "company",
+      "industry",
+      "message"
+    ],
+    "callsite_contexts": [
+      {
+        "character_offset": 909,
+        "utf8_byte_offset": 909,
+        "context": "),[l,n]=(0,s.useState)(null),d=async e=>{e.preventDefault(),t(!0),n(null);let a=new FormData(e.currentTarget),r=await x(a);t(!1),r.success?i(!0):n(\"Something went wrong. Please try again or email us directly.\")};return(0,r.jsx)(\"div\",{className:\"bg-surface-container-lowest p-8 md:p-12 rounded-[3rem] border border-outline-variant/15 shadow-sm hover:shadow-xl transition-all duration-700\",children:(0,r.jsx)(o.N,{mode:\"wait\",children:a?(0,r.jsxs)(c.P.div,{initial:{opacity:0,scale:.9},animate:{opacity:1,scale:1},className:\"py-12 flex flex-col items-center text-center space-y-6\",children:[(0,r.jsx)(\"div\",{className:\"w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center\",children:(0,r.jsx)(\"span\",{className:\"material-symbols-outlined text-5xl\",children:\"verified\"})}),(0,r.jsx)(\"h2\",{className:\"fon"
+      }
+    ]
+  }
+]

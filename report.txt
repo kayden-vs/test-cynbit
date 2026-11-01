@@ -1,0 +1,162 @@
+Cynbit website: backend assessment
+2 November 2026
+
+What I looked at
+
+Most of the public site is content and forms, so I focused on what those forms
+send, how the pages are served, and whether any obvious security settings are
+missing. The one issue I could confirm was missing security headers. I didn't
+find evidence of a serious backend vulnerability.
+
+The review used public pages and JavaScript, with REA for source analysis and
+browser capture. I then repeated the page checks with curl. No forms, logins or
+payments were submitted, and no load test was run. The saved responses are in
+evidence/recheck/.
+
+How the site works, from what is visible
+
+The response headers and scripts point to Next.js served through Vercel, with
+prerendered pages being served from cache. The forms use Server Actions. That
+matters because their requests can go to an ordinary page URL, rather than an
+/api route. The client code encodes the arguments and POSTs to the current page.
+It doesn't reveal the server implementation or which DB is used.
+
+I focused on these three forms:
+
+Contact, /contact
+  submitInquiry takes FormData with fullName, email, message, company and
+  industry. The client checks the returned success field.
+
+Enrollment, /bitelevate
+  createBitelevateCashfreeOrder takes fullName, university, email, phone, track,
+  duration, referralName and ambitions. The client expects an order ID and a
+  paymentSessionId for Cashfree checkout. A second action,
+  verifyBitelevatePayment, takes token and orderId.
+
+Job application, /careers/backend-developer
+  submitCandidateApplication takes contact/profile details, jobId and an
+  educationData JSON string. It also sends education, university and
+  graduationYear separately, derived from the first education row.
+
+These fields come from the public scripts; I didn't submit the forms to check
+their responses. The relevant excerpts are in evidence/actions.json. Downloading
+the three scripts again gave the same hashes. The action IDs being visible is
+normal for this setup and isn't a finding.
+
+Missing security headers
+
+Security finding, low severity.
+
+I checked /, /contact and /bitelevate twice. All six responses were HTTP 200.
+None included Content-Security-Policy, X-Frame-Options or
+X-Content-Type-Options. No CSP meta declaration was found in those HTML bodies.
+
+I'd start by adding a framing restriction and nosniff, while keeping the HSTS
+header that's already there. This is a hardening change. Missing headers alone
+don't prove that an XSS or clickjacking attack would work.
+
+Example Next.js config, assuming the pages don't need to be embedded:
+
+  export default {
+    async headers() {
+      return [{
+        source: '/:path*',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Content-Security-Policy',
+            value: "base-uri 'self'; object-src 'none'; frame-ancestors 'none'" }
+        ]
+      }];
+    }
+  };
+
+This only covers a few CSP restrictions. Before adding a full script policy,
+I'd check that it works with Next.js hydration, analytics and Cashfree.
+
+Evidence: evidence/recheck/home-1.headers.txt through courses-2.headers.txt.
+The results.json file records both rounds, HTML hashes and meta-tag checks.
+
+Two backend changes I'd consider
+
+The code suggests a couple of places worth reviewing internally. I couldn't
+check whether the server already handles them.
+
+First, keep validation in the Server Action before saving anything or sending
+email. For example, two different email values in one contact submission should
+be rejected rather than leaving different parts of the code to choose a value.
+
+The job form is another useful example: educationData and the separate education
+fields describe the same information. I'd validate the array and derive the
+summary on the server, so conflicting values can't end up in the record.
+
+I've included a small contact parser in examples/inquiry.mjs. It rejects unknown
+fields, duplicate keys, missing values, files in text fields and oversized text.
+The lengths are suggested limits, and the email check only checks syntax. This
+isn't a complete form-security layer: request size limits and safe rendering
+still matter. Other forms also need to allow legitimate repeated checkboxes.
+
+The payment UI also has code to display bitElevateCredentials.email and
+bitElevateCredentials.password after verification. I didn't receive or retrieve
+any credentials, so I'm not reporting a leak. Still, I'd prefer a single-use
+activation link that lets the user choose a password. The payment response
+could then just report the enrollment status.
+
+For payment confirmation, the flow would look like this:
+
+  authorize the caller or guest token for this order
+  fetch payment status from the provider
+  check order identity, paid amount, currency and successful status
+  in one database transaction:
+      lock the order
+      if fulfilled, return its existing status
+      create the enrollment with a unique order_id
+      mark the order fulfilled
+      queue one activation email through a transactional outbox
+
+There isn't an amount field in the observed form. I'd keep pricing on the
+server, based on track and duration. Both the webhook and browser confirmation
+should use the same operation, so a retry can't create a second enrollment.
+This is a proposed design, not a description of the current backend.
+
+Page response times
+
+The two rounds of GET requests gave these times to first byte:
+
+  Page          First request     Second request
+  /                 292 ms             223 ms
+  /contact          608 ms             259 ms
+  /bitelevate       270 ms             299 ms
+
+All six responses were cache hits and Brotli-compressed. The contact page varied
+most, but two requests aren't enough to call it slow. These numbers include
+network time and say little about DB writes or payment processing.
+
+I'd keep the public-page caching as it is. With backend access, the next useful
+measurement would be how long the form actions and their dependencies take.
+
+What wasn't tested, and how to repeat the checks
+
+Server validation, authorization, rate limits and payment replay protection
+remain untested. The eight local tests cover the example parser, not Cynbit's
+server. I wouldn't claim a pass or a failure for those backend controls.
+
+Quick check for a page response:
+  curl -sS --compressed -D - -o /dev/null https://www.cynbit.in/contact
+
+To repeat the saved public checks:
+  python3 scripts/check_public.py
+
+The script makes six page GETs and three script GETs, one at a time with a pause
+between them. It overwrites the saved results, so keep a copy first if comparing
+runs. Headers, hashes and results are included here; the downloaded bodies stay
+local and are ignored by Git.
+
+To run the example's eight local tests (Node 22+):
+  node --test examples/inquiry.test.mjs
+
+Docs referenced
+
+Next.js data security:
+https://nextjs.org/docs/app/guides/data-security
+Cashfree webhook idempotency:
+https://www.cashfree.com/docs/payments/online/webhooks/webhook-idempotency
